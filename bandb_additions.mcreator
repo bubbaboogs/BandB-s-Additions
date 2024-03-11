@@ -23,7 +23,8 @@
           "src/main/resources/assets/bandb_additions/models/item/bomb.json",
           "src/main/java/net/mcreator/bandbadditions/item/BombItem.java"
         ]
-      }
+      },
+      "path": "~/Bombs"
     },
     {
       "name": "BombProjectileProjectileHitsBlock",
@@ -54,7 +55,8 @@
             "type": "world"
           }
         ]
-      }
+      },
+      "path": "~/Bombs"
     },
     {
       "name": "BombProjectile",
@@ -67,13 +69,180 @@
         "files": [
           "src/main/java/net/mcreator/bandbadditions/entity/BombProjectileEntity.java"
         ]
-      }
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "IronBomb",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bandb_additions/models/item/iron_bomb.json",
+          "src/main/java/net/mcreator/bandbadditions/item/IronBombItem.java"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "IronBombProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bomb_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/IronBombProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "IronBombProjectile",
+      "type": "projectile",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bomb_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/entity/IronBombProjectileEntity.java"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "BombRecipe",
+      "type": "recipe",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bandb_additions/recipes/bomb_recipe.json"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "IronBombRecipe",
+      "type": "recipe",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bandb_additions/recipes/iron_bomb_recipe.json"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "DirtBomb",
+      "type": "item",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bandb_additions/models/item/dirt_bomb.json",
+          "src/main/java/net/mcreator/bandbadditions/item/DirtBombItem.java"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "DirtBombProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_bomb_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/DirtBombProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "DirtBombProjectile",
+      "type": "projectile",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_bomb_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/entity/DirtBombProjectileEntity.java"
+        ]
+      },
+      "path": "~/Bombs"
+    },
+    {
+      "name": "DirtBombRecipe",
+      "type": "recipe",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_bomb_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bandb_additions/recipes/dirt_bomb_recipe.json"
+        ]
+      },
+      "path": "~/Bombs"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.bandb_additions.dirt_bomb": "Dirt Bomb",
+      "item.bandb_additions.iron_bomb": "Iron Bomb",
       "painting.bandb_additions.bomb_painting.author": "Blake",
       "item.bandb_additions.bomb": "Bomb",
       "painting.bandb_additions.bomb_painting.title": "Bomb Painting"
@@ -81,7 +250,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Bombs",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "bandb_additions",

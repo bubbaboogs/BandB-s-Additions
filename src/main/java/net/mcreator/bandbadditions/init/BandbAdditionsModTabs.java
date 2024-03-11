@@ -24,6 +24,11 @@ public class BandbAdditionsModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(BandbAdditionsModItems.BOMB.get());
+			tabData.accept(BandbAdditionsModItems.IRON_BOMB.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(BandbAdditionsModItems.DIRT_BOMB.get());
 		}
 	}
 }

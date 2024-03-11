@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:dirt"
+    },
+    "b": {
+      "item": "bandb_additions:bomb"
+    }
+  },
+  "result": {
+    "item": "bandb_additions:dirt_bomb",
+    "count": 1
+  }
+}

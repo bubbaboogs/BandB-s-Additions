@@ -16,5 +16,7 @@ public class BandbAdditionsModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerEntityRenderer(BandbAdditionsModEntities.BOMB_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(BandbAdditionsModEntities.IRON_BOMB_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(BandbAdditionsModEntities.DIRT_BOMB_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }
