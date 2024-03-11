@@ -235,6 +235,152 @@
         ]
       },
       "path": "~/Bombs"
+    },
+    {
+      "name": "SoulBerry",
+      "type": "item",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soul_berry",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bandb_additions/models/item/soul_berry.json",
+          "src/main/java/net/mcreator/bandbadditions/item/SoulBerryItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SoulberryPlantGrownPlantRightClicked",
+      "type": "procedure",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulberry_plant_grown_plant_right_clicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/SoulberryPlantGrownPlantRightClickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulberryPlantGrown",
+      "type": "plant",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulberry_plant_grown",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/bandb_additions/worldgen/placed_feature/soulberry_plant_grown.json",
+          "src/main/resources/assets/bandb_additions/blockstates/soulberry_plant_grown.json",
+          "src/main/resources/assets/bandb_additions/models/item/soulberry_plant_grown.json",
+          "src/main/resources/assets/bandb_additions/models/block/soulberry_plant_grown.json",
+          "src/main/java/net/mcreator/bandbadditions/block/SoulberryPlantGrownBlock.java",
+          "src/main/resources/data/bandb_additions/forge/biome_modifier/soulberry_plant_grown_biome_modifier.json",
+          "src/main/resources/data/bandb_additions/worldgen/configured_feature/soulberry_plant_grown.json"
+        ]
+      }
+    },
+    {
+      "name": "SoulberryPlantUpdateTick",
+      "type": "procedure",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulberry_plant_update_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/SoulberryPlantUpdateTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SoulberryPlant",
+      "type": "plant",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soulberry_plant",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bandb_additions/models/block/soulberry_plant.json",
+          "src/main/java/net/mcreator/bandbadditions/block/SoulberryPlantBlock.java",
+          "src/main/resources/assets/bandb_additions/blockstates/soulberry_plant.json",
+          "src/main/resources/assets/bandb_additions/models/item/soulberry_plant.json"
+        ]
+      }
+    },
+    {
+      "name": "PlayerRightClickSoulSand",
+      "type": "procedure",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_right_click_soul_sand",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/PlayerRightClickSoulSandProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -242,8 +388,11 @@
   "language_map": {
     "en_us": {
       "item.bandb_additions.dirt_bomb": "Dirt Bomb",
+      "item.bandb_additions.soul_berry": "Soul Berry",
+      "block.bandb_additions.soulberry_plant_grown": "Soulberry Plant Grown",
       "item.bandb_additions.iron_bomb": "Iron Bomb",
       "painting.bandb_additions.bomb_painting.author": "Blake",
+      "block.bandb_additions.soulberry_plant": "Soulberry Plant",
       "item.bandb_additions.bomb": "Bomb",
       "painting.bandb_additions.bomb_painting.title": "Bomb Painting"
     }

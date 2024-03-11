@@ -2,7 +2,6 @@
 package net.mcreator.bandbadditions.item;
 
 import net.minecraft.world.level.Level;
-import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.Rarity;
 import net.minecraft.world.item.ProjectileWeaponItem;
@@ -23,11 +22,6 @@ import java.util.List;
 public class IronBombItem extends Item {
 	public IronBombItem() {
 		super(new Item.Properties().stacksTo(16).rarity(Rarity.COMMON));
-	}
-
-	@Override
-	public UseAnim getUseAnimation(ItemStack itemstack) {
-		return UseAnim.BOW;
 	}
 
 	@Override

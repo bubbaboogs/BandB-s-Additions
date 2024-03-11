@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "bandb_additions:block/sweet_berry_bush_stage3",
+    "particle": "bandb_additions:block/sweet_berry_bush_stage3"
+  },
+  "render_type": "cutout"
+}

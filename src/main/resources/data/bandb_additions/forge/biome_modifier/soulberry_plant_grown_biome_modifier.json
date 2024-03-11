@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "soul_sand_valley",
+  "features": "bandb_additions:soulberry_plant_grown",
+  "step": "vegetal_decoration"
+}

@@ -30,5 +30,14 @@ public class BandbAdditionsModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(BandbAdditionsModItems.DIRT_BOMB.get());
 		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+			tabData.accept(BandbAdditionsModItems.SOUL_BERRY.get());
+		}
+
+		if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(BandbAdditionsModBlocks.SOULBERRY_PLANT_GROWN.get().asItem());
+			tabData.accept(BandbAdditionsModBlocks.SOULBERRY_PLANT.get().asItem());
+		}
 	}
 }
