@@ -14,5 +14,5 @@ import net.mcreator.bandbadditions.BandbAdditionsMod;
 
 public class BandbAdditionsModPaintings {
 	public static final DeferredRegister<PaintingVariant> REGISTRY = DeferredRegister.create(ForgeRegistries.PAINTING_VARIANTS, BandbAdditionsMod.MODID);
-	public static final RegistryObject<PaintingVariant> BOMB = REGISTRY.register("bomb", () -> new PaintingVariant(32, 32));
+	public static final RegistryObject<PaintingVariant> BOMB_PAINTING = REGISTRY.register("bomb_painting", () -> new PaintingVariant(32, 32));
 }

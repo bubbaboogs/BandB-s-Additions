@@ -1,55 +1,12 @@
 {
   "mod_elements": [
     {
-      "name": "BombProjectileProjectileHitsBlock",
-      "type": "procedure",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bomb_projectile_projectile_hits_block",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bandbadditions/procedures/BombProjectileProjectileHitsBlockProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BombProjectile",
-      "type": "projectile",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "bomb_projectile",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/bandbadditions/entity/BombProjectileEntity.java"
-        ]
-      }
-    },
-    {
-      "name": "Bomb",
+      "name": "BombPainting",
       "type": "painting",
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "bomb",
+      "registry_name": "bomb_painting",
       "metadata": {
         "files": []
       }
@@ -59,9 +16,9 @@
   "sound_elements": [],
   "language_map": {
     "en_us": {
-      "painting.bandb_additions.bomb.author": "Blake",
-      "painting.bandb_additions.bomb.title": "Bomb",
-      "item.bandb_additions.bomb": "Bomb"
+      "painting.bandb_additions.bomb_painting.author": "Blake",
+      "item.bandb_additions.bomb": "Bomb",
+      "painting.bandb_additions.bomb_painting.title": "Bomb Painting"
     }
   },
   "foldersRoot": {
