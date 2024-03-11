@@ -1,9 +1,23 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Bomb",
+      "type": "painting",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb",
+      "metadata": {
+        "files": []
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "painting.bandb_additions.bomb.author": "Blake",
+      "painting.bandb_additions.bomb.title": "Bomb"
+    }
   },
   "foldersRoot": {
     "name": "~",
