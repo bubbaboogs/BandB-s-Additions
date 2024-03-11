@@ -10,6 +10,64 @@
       "metadata": {
         "files": []
       }
+    },
+    {
+      "name": "Bomb",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/bandb_additions/models/item/bomb.json",
+          "src/main/java/net/mcreator/bandbadditions/item/BombItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BombProjectileProjectileHitsBlock",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/procedures/BombProjectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BombProjectile",
+      "type": "projectile",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomb_projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/bandbadditions/entity/BombProjectileEntity.java"
+        ]
+      }
     }
   ],
   "variable_elements": [],

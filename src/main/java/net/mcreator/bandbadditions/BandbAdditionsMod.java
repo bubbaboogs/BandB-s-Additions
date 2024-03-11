@@ -29,7 +29,10 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.mcreator.bandbadditions.init.BandbAdditionsModTabs;
 import net.mcreator.bandbadditions.init.BandbAdditionsModPaintings;
+import net.mcreator.bandbadditions.init.BandbAdditionsModItems;
+import net.mcreator.bandbadditions.init.BandbAdditionsModEntities;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -48,6 +51,11 @@ public class BandbAdditionsMod {
 	public BandbAdditionsMod() {
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		BandbAdditionsModItems.REGISTRY.register(bus);
+		BandbAdditionsModEntities.REGISTRY.register(bus);
+
+		BandbAdditionsModTabs.REGISTRY.register(bus);
 
 		BandbAdditionsModPaintings.REGISTRY.register(bus);
 
